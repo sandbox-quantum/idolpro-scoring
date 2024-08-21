@@ -1,0 +1,30 @@
+name: idolpro_scoring
+
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+  - pyg
+
+dependencies:
+  - pip
+  - python
+  - pytorch::pytorch-cuda=12.1
+  - pytorch::pytorch
+  - pyg::pyg
+  - pyg::pytorch-scatter
+  - pyg::pytorch-cluster
+  - pyg::pytorch-sparse
+  - rdkit=2023.09.3
+  - mdanalysis
+  - ase
+  - matplotlib
+  - orjson
+  - tqdm
+  - python-lmdb
+  - pyyaml
+  - numpy=1.26.4
+  - pip:
+    - e3nn
+    - meeko
+    - -e ./ocp
